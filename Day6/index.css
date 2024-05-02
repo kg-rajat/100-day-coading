@@ -1,0 +1,16 @@
+h1{
+  color: red;
+  text-align: center;
+  text-decoration: black underline;
+  letter-spacing: 8px;
+}
+p{
+  color: teal;
+}
+button{
+  background-color: orange;
+  color: wheat;
+}
+pre{
+  color: teal;
+}

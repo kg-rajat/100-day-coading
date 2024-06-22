@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Example</title>
+</head>
+<body>
+  
+  <h1 id="heading">Hello, World!</h1>
+
+  <script>
+    // variable and Data Types
+    let name = "John";
+    let age = 30;
+    let isStudent = false;
+
+    //Control Flow Statements (if-else)
+    if (age >= 18) {
+      console.log(name + " is an adult.");
+    } else {
+      console.log(name + " is a minor.");
+    }
+
+    //Function
+    function greet(){
+      return "Hello, " + name + "!";
+    }
+
+    //Arrays
+    let fruits = ["Apple", "Banana", "Orange"];
+
+    //objects
+    let person = {
+      name:"Doli",
+      age:30,
+      isStudent:true
+    };
+
+    // DOM Manipulation
+    let heading = document.getElementById("heading");
+    heading.textContent = greet();
+
+    //DOM Events
+    heading.addEventListener("click", function(){
+      alert("Heading clicked!");
+    });
+  </script>
+</body>
+</html>

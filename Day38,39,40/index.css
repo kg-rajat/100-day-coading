@@ -1,0 +1,448 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.sidebar{
+  background-color: black;
+  width: 300px;
+  border-radius: 1rem;
+  padding-right: 0.5rem;
+}
+
+.main-content{
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0  1.5rem 0 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav{
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.7rem;
+}
+
+.nav-option:hover{
+  opacity: 1;
+}
+
+.nav-option i{
+  font-size: 1.25rem;
+}
+
+.nav-option a{
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons{
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.icons i{
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+
+.icons i:hover{
+  opacity: 1;
+}
+
+.box{
+  background-color: #232323;
+  height: 8rem;
+  border-radius: 0.75rem;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 1rem 1.25rem;
+}
+
+.title{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sub-title{
+  font-size: 0.75rem;
+  opacity: 0.9;
+  padding-top: 1rem;
+}
+
+.btn{
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  height: 2rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.second-box{
+  background-color: #232323;
+  height: 10rem;
+  border-radius: 0.75rem;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 1rem 1.25rem;
+}
+
+.sticky-nav{
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons{
+ margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-nav-options button{
+  margin-left: 1rem;
+}
+
+.nav-item{
+  margin-right: 1rem;
+}
+
+.dark-btn{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.sticky-nav-options i{
+  margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .hide{
+      display: none;
+  }
+}
+
+h2{
+  margin-top: 2rem;
+}
+
+.card{
+  background-color: #232323;
+  width: 190px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.artists{
+  border-radius: 50%;
+}
+
+.card-title{
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.card-info{
+  font-size: 0.75rem;
+  opacity: 0.5;
+  padding-top: 0.5rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column li a{
+  color: white;
+  opacity: 0.7;
+}
+
+.footer-column li a:hover{
+  opacity: 1;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 20px;
+}
+
+.social-icons i{
+  font-size: 1.3rem;
+}
+
+
+.line{
+  width: 100%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.tnc-link{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tnc-link ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tnc-link ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.tnc-link ul li a{
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.tnc-link ul li a:hover{
+  opacity: 1;
+}
+
+.tnc-link > a{
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.tnc-link > a:hover{
+  opacity: 1;
+}
+
+.music-player{
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album{
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.album-img{
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5rem;
+}
+
+.album-image{
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.album-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+}
+
+.song-name{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.singer-name{
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 0.25rem;
+}
+
+.album-icon{
+  font-size: 14px;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+
+.player{
+  width: 50%;
+}
+
+
+.player-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-control-icon{
+  height: 1rem;
+  margin-right: 1.75rem;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.player-control-icon:hover{
+  opacity: 1;
+}
+
+#third-icon{
+  opacity: 1;
+  height: 2rem;
+}
+
+.playback-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar{
+  margin-top: 0.5rem;
+  width: 60%;
+}
+
+
+.current-time{
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+
+.total-time{
+  margin-left: 0.5rem;
+  font-size: 14px;
+}
+
+.control{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.volume p{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.volume i{
+  margin-right: 0.5rem;
+}
+
+.volume-control{
+  font-size: 12px;
+}
+
+.control input.progressbar {
+  margin-top: 0.5rem;
+  width: 70%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
